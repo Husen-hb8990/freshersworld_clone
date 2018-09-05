@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<style>	
+body{
+margin:0px;
+}
+.navigation_bar{
+width:100%;
+height:55px;
+min-width:1250px;
+display:flex;
+font-size:14px;
+color:#fff;
+padding-top:3px;
+padding-right:15px;
+background-color:#333;
+border-bottom:4px solid:orange;
+}
+.nav-links:hover{
+color:#fff;
+}
+.img{
+display:block;
+max-width:100%;
+height:auto;
+padding-top:10px;
+vertical-align:middle;
+}	
+
+.image{
+margin-left:10px;
+}
+	
+.apply:hover{
+	background-color:#ff5a00;
+	color:green;
+}
+.button:hover{
+	color: #fff;
+}
+
+.nav-links{
+text-decoration:none;
+color:#e3e3e3;
+font-size:16px;
+font-family:Roboto,sans-serif;
+}
+
+.placementpapers{
+text-decoration:none;
+color:#e3e3e3;
+font-size:16px;
+font-family:Roboto,sans-serif;
+}
+
+.courses{
+text-decoration:none;
+color:#e3e3e3;
+font-size:16px;
+font-family:Roboto,sans-serif;
+}
+
+.login{
+text-decoration:none;
+color:#e3e3e3;
+font-size:16px;
+font-family:Roboto,sans-serif;
+}
+
+.login:hover{
+color:#fff;
+}
+
+
+.dropbtn {
+    background-color:#333;
+    color: #e3e3e3;
+    padding:10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+	margin-left:20px;
+}
+.dropbtn:hover{
+color:#fff;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+	color:#e3e3e3;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+	border-top:5px solid:#fff;
+}
+
+.dropdown-content a:hover {
+color: blue;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.column a {
+    float: none;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.column a:hover {
+    background-color: #ddd;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.glyphicon{
+font-size:14px;
+margin-left:20px;
+color:#dcdcdc
+}
+.registration{
+color:#dcdcdc;
+font-size:16px;
+text-decoration:none;
+}
+.registration:hover{
+color:#fff;
+}
+
+
+.institutes{
+color:#dcdcdc;
+font-size:16px;
+margin-left:20px;
+}
+
+.institutes:hover{
+color:#fff;
+}
+
+
+.employer{
+color:#dcdcdc;
+font-size:16px;
+margin-left:20px;
+}
+
+.employer:hover{
+color:#fff;
+}
+.modal-header, h4, .close {
+      background-color: #333;
+      color:white !important;
+      text-align: center;
+      font-size: 30px;
+  }
+  .modal-footer {
+      background-color: #f9f9f9;
+  }
+.search{
+border:1px solid #333;
+width:68%;
+padding:25px;
+margin-top:10px;
+margin-left:10px;
+background-image: url(https://d2zxo3dbbqu73w.cloudfront.net/fwassets-test/51835557/images/search-bg-image.png);
+}
+.input{
+margin-left:20px;
+padding:5px 15px;
+}																
+#btn{
+padding-right:5px 35px;
+background-color:#f16622;
+color:#fff;
+border:none;
+font-weight:600;
+}
+.pull-right{
+border:1px solid #333;
+width:30%;
+margin-top:10px;
+margin-left:5px;
+margin-right:10px;
+background-color:#fff;
+height:115px;
+}
+.pull-left{
+border:1px solid #dcdcdc;
+width:68%;
+padding:10px;
+margin-top:10px;
+margin-left:10px;
+background-color:#fff;
+
+}
+
+#advsearch{
+display:inline-block;margin-left:80px;color:#fff;
+}
+#advsearch:hover{color:#337ab7;}
+
+
+.latest-jobs{
+background-color:#fff;
+border:1px solid #dcdcdc;
+border-bottom:1px solid #f16622;
+margin-bottom:7px;
+padding:none;
+float:left;
+position:relative;
+display:block;
+width:68%;
+margin-top:10px;
+margin-left:10px;
+height:50px;
+}
+
+.heading{
+background-color:#f16622;
+padding:15px 0px 14px 10px;
+width:121px;
+color:#fff;
+font-size:16px;
+margin:0px;
+border:1px solid #f16622;	
+}
+.jobs{color:#f16622;}
+<!--.job-list-block{
+background-color:#fff;
+border:1px solid #dcdcdc;
+margin-bottom:7px;
+display:inline;
+}
+.job-list-block{
+background-color:#fff;
+border:1px solid #dcdcdc;
+margin-bottom:7px;
+padding:none;
+float:left;
+position:relative;
+display:block;
+width:68%;
+margin-top:10px;
+margin-left:10px;
+
+}
+.heading-latest-block{
+border-bottom:1px solid #f16622;
+float:left;
+display:inline;
+}
+.padding-none{
+padding:0px;
+}
+.heading-latest{
+background-color:#f16622;
+padding:15px 0px 14px 10px;
+width:121px;
+color:#fff;
+font-size:16px;
+margin:0px;}
+
+.latest-sub-heading{
+margin:13px;
+
+}
+.latest-all-jobs{
+margin-left:18px;
+margin-right:6px;
+}
+.font-13{
+font-size:13px;
+}
+.or{
+color:#b9b9b9;
+}
+
+@media (min-width:1200px)
+.col-md-12{
+width:100%;
+}
+@media(min-width:1200px)
+.col-lg-12{
+width:100%;
+float:left;
+}
+@media(min-width:1200px)
+.col-xs-12{
+width:100%;
+float:left;
+position:relative;
+}
+body{color:#333;}
+.heading-latest-block{
+background-color: #f16622;
+    
+    width: 121px;
+    color: #fff;
+    font-size: 16px;
+    margin: 0px;
+	display:inline;
+	float:left;
+}
+
+.heading-latest{
+background-color:#f16622;
+padding:15px 0px 14px 10px;
+width:121px;
+color:#fff;
+margin:0px;
+display:inline-block;
+float:left;
+}
+.latest-sub-heading{
+margin:13px;
+}
+.latest-all-jobs{
+margin-right:18px;
+margin-left:6px;
+display:inline;
+color:#f16622;
+text-decoration:none;
+}-->
+
+
+
+
+</style>
+
+<body style="background-color:#f2f2f2;">
+
+	<!---nav bar--->
+	<div  class="navigation_bar" style="border-bottom:3px solid #f16622;display:inline-block;">
+	
+	<a href="#">
+	<img class="image" src="freshersworld-logo.png"></a>
+	
+	
+			<div class="dropdown">
+					<button class="dropbtn" style="margin-left:20px;margin-top:7px;">Jobs
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+						<a href="#" style="color:#333";><b>Jobs By Category</b></a>
+						<a href="#">IT/Software</a>
+						<a href="#">Core Technical</a>
+						<a href="#">Govt.Sector</a>
+						<a href="#">MBA Jobs</a>
+						<a href="#">Internship Jobs</a>
+						<a href="#">Diploma Jobs</a>
+						<a href="#">Research</a>
+						<a href="#">Defence</a>
+						<a href="#">BPO Jobs</a>
+						<a href="#">Part-Time Jobs</a>
+						</div>	
+			</div>
+
+			<div class="dropdown">
+				<button class="dropbtn">Placement Paper <i class="fa fa-caret-down"></i>
+				</button>
+					<div class="dropdown-content">
+						<a href="#" style="color:#333";><b>Placement Papers</b></a>
+						<a href="#">Mu Sigma</a>
+						<a href="#">BSNL</a>
+						<a href="#">ISRO</a>
+						<a href="#">HCL</a>
+						<a href="#">AMAZON</a>
+						<a href="#">CTS</a>
+						<a href="#">TCS</a>
+						<a href="#">BMRCC</a>
+						<a href="#">DRDO</a>
+						<a href="#">GATE</a>
+					
+				</div>
+		</div>
+				
+			<div class="dropdown">
+					<button class="dropbtn">Institutes & Courses <i class="fa fa-caret-down"></i></button>
+					<div class="dropdown-content">
+						<a href="#" style="color:#333;"><b>Career Directory</b></a>
+						<a href="#">Training Institutes</a>
+						<a href="#">Training Courses</a>
+						<a href="#">Colleges & Universities</a>
+						<a href="#">Educational Consultants</a>
+						<a href="#" style="color:#333;"><strong>Higher Study In India</strong></a>
+						<a href="#">MBA/PGDM</a>
+						<a href="#">MCA</a>
+						<a href="#">M.Tech</a>
+						<a href="#">M.Sc</a>
+						<a href="#">M.A.</a>
+				
+				</div>
+		</div>		
+
+			
+				
+					<a href="#myModal" id="btn1"  style="text-decoration:none;margin-right:15px;" class="login">
+					<i style="font-size:14px;margin-left:20px;color:#dcdcdc" class="fa">&#xf023;</i> Login <span style="margin-left:10px;"|</a>
+					
+					
+					<a href="fw-registration.html" target="_blank" class="registration" style="text-decoration:none"> <i style="font-size:18px;margin-left:20px;color:#dcdcdc" class="fa">&#xf023;</i> Register Free</a>
+					<a href="#" class="institutes" style="text-decoration:none;">Institutes</a>
+					<a href="#" class="employer" style="text-decoration:none;">Employer</a>
+					<a href="#" class="employer" style="text-decoration:none;margin-left:25px;">Post Job</a>
+					<span style="color:white;background-color:#f16622;">Free</span>
+			
+	</div> <!---closing of nav bar--->
+	
+<!---Login Form--->
+<div class="container">
+		  <!-- Modal -->
+		  <div class="modal fade" id="myModal" role="dialog">
+			<div class="modal-dialog">
+			
+			  <!-- Modal content-->
+			  <div class="modal-content">
+				<div class="modal-header" style="padding:35px 50px;background-color:#333">
+				  <button type="button" class="close" data-dismiss="modal">&times;</button>
+				  <h4><span class="glyphicon glyphicon-user"></span> Jobseeker Login</h4	>
+				</div>
+				<div class="modal-body" style="padding:40px 50px;">
+				  <form role="form">
+					<div class="form-group">
+					  <label for="email"><span class="glyphicon glyphicon-envelope"></span> Email</label>
+					  <input type="text" class="form-control" id="email" placeholder="Enter Email">
+					</div>
+					<div class="form-group">
+					  <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
+					  <input type="password" class="form-control" id="psw" placeholder="Enter Password">
+					</div>
+					<div class="checkbox">
+					  <label><input type="checkbox" value="" checked><span style="font-weight:600">Remember me</span></label>
+					</div>
+
+					  <button type="submit" class="btn btn-success btn-block" style="background-color:#ff5a00;font-size:16px;font-weight:600;"><span class="glyphicon glyphicon-log-in"></span> Login</button>
+				  </form>
+				</div>
+				<div class="modal-footer" style="display:inline-block">
+				  <button type="submit" class="btn btn-danger btn-default pull-left" style="display:inline-block" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+				  <p style="text-align:center;display:inline-block;">Not a member? <a href="#">Sign Up</a></p>
+				  <p style="margin-right:200px;margin-left:2px;display:inline-block;">Forgot <a href="#">Password?</a></p>
+				</div>
+			  </div>
+			  
+			</div>
+		  </div> 
+</div><!--closing of login form--->
+
+<div class="col-md-12 col-xs-12 col-lg-12 search">
+		<input type="text" class="input" placeholder="Keyword">
+				<select  style="padding:7px 25px;margin-left:20px;" id="course"  type="text"  name="current city">	
+				  <option>Select Course</option >
+				  <optgroup label="Popular Courses">
+				  <option value="0">BE/B.Tech</option>
+				  <option value="1">MBA/PGDM</option>
+				  <option value="2">MCA</option>
+				  <option value="3">ME/M.Tech</option>
+				  <option value="4">MSc</option>
+				  <optgroup label="UG Courses">
+				  <option value="5">B.Arch</option>
+				  <option value="6">B.Com</option>
+				  <option value="7">B.Pharm</option>
+				  <option value="8">BA</option>
+				  <option value="9">BBA/BBM</option>
+				  <option value="10">BCA</option>
+				  <option value="11">BDS</option>
+				  <option value="12">BE/B.Tech</option>
+				  <option value="13">BEd</option>
+				  <option value="14">BHM</option>
+				  <option value="15">BSc</option>
+				  <option value="16">BVSc</option>
+				  <option value="17">CA</option>
+				  <option value="18">CS</option>
+				  <option value="19">ICWA</option>
+				  <option value="20">LLB</option>
+				  <option value="21">MBBS</option>
+				  <option value="22">LLB</option>
+				  <option value="23">B.Fashion Tech</option>
+				  <option value="24">BPEd</option>
+				  <option value="25">BSW</option>
+				  <optgroup label="PG Courses">
+				  <option value="26">LLM</option>
+				  <option value="27">M Phill / Ph.D</option>
+				  <option value="28">M Arch</option>
+				  <option value="29">M Com</option>
+				  <option value="30">M Pharm</option>
+				  <option value="31">MA</option>
+				  <option value="32">MBA/PGDM</option>
+				  <option value="33">MCA</option>
+				  <option value="34">MD</option>
+				  <optgroup label="Other Courses">
+				  <option value="35">Diploma</option>
+				  <option value="36">Certificate Course(ITI)</option>
+				  <option value="37">Vocational Training</option>
+				  <option value="38">12 Pass(HSE)</option>
+				  <option value="39">10 Pass(SSC)</option>
+				  <option value="40">Upto 9th Standard</option>
+				  <option value="41">No Education/Schooling</option>
+			</select>
+
+		
+		<input type="text" class="input" placeholder="Enter Location">
+			<button type="button" id="btn" class="input">Search Jobs</button><br>	
+			<div style="display:inline-block; color:#fff; font-size:12px;padding-top:5px;">
+				<p style="display:inline-block;margin-left:30px;margin-right:380px;">Eg.php,Wipro, Software</p>
+				<p style="display:inline-block">Eg.Hyderabad,Mumbai</p>
+				<a href="#"><p id="advsearch" style="margin-left:85px;">Advanced Search</p></a>
+		   </div>
+</div>
+	
+	<div class="col-md-12 col-xs-12 col-lg-12 pull-right div">
+		<p>Are you a Fresher? Looking for your first Dream Job?</p>
+		<button type="button" id="btn" style="margin-left:130px;padding:10px;box-shadow: 0px 2px 5px 0px #666;">Register Now</button><br><br>
+		<p>Apply for Thousands of Jobs across India, Its FREE</p>
+	</div>
+	
+	
+	<!--<div class="latest-jobs">
+		
+			<h1 class="heading">LATEST JOBS</h1>
+			<a href="#" class="jobs">All Jobs</a>
+			<a href="#" class="jobs">Software Jobs</a>
+			<a href="#" class="jobs">Govt Jobs</a>
+			<a href="#" class="jobs">Core Technical Jobs</a>
+			<a href="#" class="jobs">MBA Jobs</a>
+			<a href="#" class="jobs">Bank Jobs</a>
+	</div>
+	
+	<!--<div class="col-md-12 col-xs-12 col-lg-12  job-list-block">
+		<div class="col-md-12 col-lg-12 col-xs-12 heading-latest-block"> 			
+			<h1 class="col-md-2 col-xs-2 col-lg-2 heading-latest display-inline">LATEST JOBS</h1>
+		<div class="col-md-10 col-xs-10 col-lg-10 padding-none latest-sub-heading display-inline">
+		<div class="latest-all-jobs font-13">
+					<a href="#">All Jobs</a>
+				</div>
+				<span class="or">|</span>
+				
+				<div class="latest-all-jobs font-13">
+					<a href="#">Software Jobs</a>
+				</div>
+					<span class="or">|</span>
+				<div class="display-inline latest-all-jobs font-13">
+					<a href="#">Govt Jobs</a>
+				</div>
+					<span class="or">|</span>
+				<div class="display-inline latest-all-jobs font-13">
+					<a href="#">Core Technical Jobs</a>
+				</div>
+				<span class="or">|</span>
+				<div class="display-inline latest-all-jobs font-13">
+					<a href="#">MBA Jobs</a>
+				</div>
+				<span class="or">|</span>
+				<div class="display-inline latest-all-jobs font-13">
+					<a href="#">Bank Jobs</a>
+				</div>
+				<span class="or">|</span>
+				<div class="display-inline latest-all-jobs font-13">
+					<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">More
+						<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								  <li><a href="#">Defence Jobs</a></li>
+								  <li><a href="#">Research Jobs</a></li>
+								  <li><a href="#">BPO Jobs</a></li>
+								  <li><a href="#">Walk-ins</a></li>
+								  <li><a href="#">BSc / BCA / BBM</a></li>
+								  <li><a href="#">Teaching Jobs</a></li>
+								  <li><a href="#">Diploma Jobs</a></li>
+								  <li><a href="#">1-3 Yrs Exp</a></li>
+								  <li><a href="#">Internships</a></li>
+								  <li><a href="#">Scholorships</a></li>
+							</ul>
+				</li>
+				</div>
+				
+			</div>
+		</div>
+</div>-->
+	
+	
+	
+	
+	
+	
+	
+	
+	
+<!---modal login script--->		
+<script>
+$(document).ready(function(){
+    $("#btn1").click(function(){
+        $("#myModal").modal();
+    });
+});
+</script>
+
+	
+	
+
+</body>
+</html>

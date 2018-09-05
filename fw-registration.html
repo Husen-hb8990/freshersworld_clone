@@ -1,0 +1,337 @@
+<!---Registration-Form-->
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="cssfw.css"/>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<style>
+
+.navigation_bar{
+width:100%;
+height:55px;
+min-width:1250px;
+display:flex;
+font-size:14px;
+color:#fff;
+padding-top:3px;
+padding-right:15px;
+background-color:#333;
+border-bottom:4px solid:orange;
+}
+body{
+background-color:#dcdcdc;
+margin:0px;
+}
+#status{
+color:red;
+}
+#status22{
+color:red;
+}
+.padding-bottom{
+padding-bottom:20px;
+}
+#status2{
+color:red;
+}
+#status3{
+color:red;
+
+}
+#status4{
+color:red;
+}
+#status5{
+color:red;
+}
+
+#status6{
+color:red;
+margin:0px;
+}
+.register-labels{
+font-size:16px;
+}
+.margin-top-7{
+margin-top:7px;
+}
+
+.input_width{
+
+width:95%;
+}
+.link{
+color:red;
+font-size:16px;
+font-weight:600;
+margin-left:10px;
+display:inline-block;
+}
+.border-bottom{
+border-bottom:4px solid red;
+}
+.btn{
+background-color:#F87217;
+padding:5px 60px 5px 60px;
+margin-left:50px;
+}
+
+</style>
+<body>
+
+<div  class="navigation_bar" style="border-bottom:3px solid #f16622;display:inline-block;">
+	
+	<a href="freshers-world-home.html">
+	<img class="image" src="freshersworld-logo.png"></a>	
+</div>
+
+<div class="container" style="border:1px solid #dbdbdb;margin-top:30px;margin-bottom:100px;">
+	<div style="width:100%;margin-right:auto;margin-left:auto;background-color:#fff;;padding-top:30px;padding-left:30px;">
+
+		<div style="display:inline-block">
+			<h3 style="color:#F87217;font-family:inherit;font-family:Roboto,sans-serif;font-size:22px;display:inline-block;">Are you Looking for a Job?</h3> <p style="display:inline-block;font:#333;font-family:Roboto,sans-serif;font-size:14px;"> Register Free & Start applying for thousands of Job Interviews & Recruitment drives</p><br>
+		</div>
+
+
+
+		<!--Registration Form---->
+		<div class="row">
+			<div class="col-sm-1 col-xs-1 col-lg-1">
+			
+				<label>Name<span style="color:red">*</span></label>
+			</div>
+			
+			<div class="col-sm-4 col-xs-12 col-lg-5 padding-bottom">
+				<input class = "input_width form-control" type="text" id="fname" placeholder="First Name" name="first name" required>
+				<span id="status"></span>
+			</div>
+			
+			<div class="col-sm-4 col-xs-12 col-lg-5" >
+				<input class = "input_width form-control" type="text"  id="lname" placeholder="Last Name" name="last name" required>
+				<span id="status22"></span><br>
+			<br>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-sm-1 col-xs-1 col-lg-1" >
+				<label>Email<span style="color:red">*</span></label>
+			</div>
+
+			<div class="col-sm-4 col-xs-12 col-lg-5" >
+				<input class = "input_width form-control" type="text" id="email_id" placeholder="Email Address" name="email" required><span id="status2"></span><br><br>
+			</div>
+		</div>
+	
+		<div class="row">
+			<div class="col-sm-1 col-xs-1 col-lg-1" >
+				<label>Password<span style="color:red">*</span></label>
+			</div>
+			
+			<div class="col-sm-4 col-xs-12 col-lg-5" >
+				<input class = "input_width form-control" id="pswd" type="password" placeholder="Password-min 6 Characters" name="password"required>
+				<span id="status3"></span><br><br>
+			</div>
+		</div>
+
+		<div class="row">
+		
+			<div class="col-sm-1 col-xs-12 col-lg-1">
+				<label>Mobile<span style="color:red">*</span></label>
+			</div>
+
+					
+			<div class="col-sm-4 col-xs-12 col-lg-5" style = "display:inline-block">
+				<div class="row">
+					<div class="col-sm-4 col-xs-3 col-lg-2">
+						<input  type="text" style="background-color:#fff;"class="input_width form-control" placeholder="+91" name="mobile number" readonly>
+					</div>
+					<div class="col-sm-8 col-xs-9 col-lg-10">
+						<input  class="input_width form-control" style="padding-left:10px;"
+						type="text" id="ph_no"  placeholder="Mobile Number" name="mobile number"required>
+						<span id="status4"></span><br><br>
+					</div>
+				</div>
+				
+			</div>
+			
+		</div>
+	
+		<div class="row">
+		
+			<div class="col-sm-1 col-xs-12 col-lg-1">
+				<label>Current City<span style="color:red">*</span></label>
+			</div>
+			<div class="col-sm-4 col-xs-12 col-lg-5" style = "display:inline-block">
+				<Select style="padding:1px 5px" class="input_width form-control form-control"  id="city" type="text" placeholder="Select City" name="current city" required>
+		
+				  <option value="0">-Select City-</option>
+				  <optgroup label="Top Metropoliton Cities">
+				  <option value="1">Ahmedabad</option>
+				  <option value="2">Bangalore</option>
+				  <option value="3">Chennai</option>
+				  <option value="4">Delhi</option>
+				  <option value="5">Gurgaon</option>
+				  <option value="6">Hyderabad</option>
+				  <option value="7">Kolkata</option>
+				  <option value="8">Mumbai</option>
+				  <option value="9">Noida</option>
+				</select>
+				<span id="status5"></span><br><br>
+			</div>
+		</div>
+	
+		<div class="row">
+			<div class="col-sm-1 col-xs-12 col-lg-1">
+				<label>Course<span style="color:red">*</span></label>
+			</div>
+		
+			<div class="col-sm-4 col-xs-12 col-lg-5" style = "display:inline-block">
+				
+				<Select style="padding:1px 5px" class="input_width form-control"  id="course" type="text"  name="current city">
+				
+				  <option value="0">-Select Course-</option >
+				  <optgroup label="Popular Courses">
+				  <option value="1">Diploma</option>
+				  <option value="2">BE/B.Tech</option>
+				  <option value="3">MBA/PGDM</option>
+				  <option value="4">MCA</option>
+				  <option value="5">ME/M.Tech</option>
+				  <option value="6">MSc</option>
+				</select>
+
+				<span id="status6"></span><br>
+		
+			</div>
+		</div>
+
+		<input type="checkbox" style="float:left;padding-left:60px;margin-right:4px" checked="checked"> <a style="float:left" href="#"> I have read terms and Conditions
+		</a>
+		<br>
+		<br>
+	
+		<button type="submit" id="id_submit" class="btn btn-success " style="background-color:#ff5a00;font-size:16px;font-weight:600;padding:5px 180px;margin-left:95px;margin-bottom:20px;"><span class="glyphicon glyphicon-log-off"></span> Submit</button>
+	
+		</div>
+	</div>
+</div>
+<script>
+document.getElementById("id_submit").onclick = function() {myFunction()};
+
+function myFunction() {
+
+		console.log("calling function");
+	
+	  var firstName = document.getElementById("fname").value;
+	  var lastName=document.getElementById("lname").value;
+	  var email=document.getElementById("email_id").value;		  
+	  var re = /\S+@\S+\.\S+/;
+	  var password=document.getElementById("pswd").value;
+	  var mob=document.getElementById("ph_no").value;
+	  var letters = /^[789]\d{9}$/;
+	  var city=document.getElementById("city");
+	  var strCity=city.options[city.selectedIndex].value;
+	  var course=document.getElementById("course");
+	  var strCourse=course.options[course.selectedIndex].value;
+	  
+	  
+	 if  (firstName == ''){
+	
+		document.getElementById("status").innerHTML="Please enter Your first Name!"; 
+	
+		return; 	
+	
+	}else {
+	
+		document.getElementById("status").innerHTML=""; 
+	
+	}
+	
+	if(/\d/.test(firstName)){
+	
+		document.getElementById("status").innerHTML="Please Enter Characters Only!";
+		return; 		
+	
+	}
+	
+	if  (lastName == ''){
+		document.getElementById("status22").innerHTML="Please enter Last name!"; 
+	
+		return; 	
+	
+	}else {
+	
+		document.getElementById("status22").innerHTML=""; 
+	
+	}
+	
+	if(/\d/.test(lastName)){
+	
+		document.getElementById("status22").innerHTML="Please Enter Characters Only!";
+		return; 		
+	
+	}
+	
+	
+	
+	
+	
+	
+	if(email==""){	
+	document.getElementById("status2").innerHTML="Please Enter your Email-id!";
+	return;
+	}
+	
+	if(!/\S+@\S+\.\S+/.test(email)){
+	document.getElementById("status2").innerHTML="Please Enter valid E-mail id!";
+	return;
+	}else{
+	
+	document.getElementById("status2").innerHTML="";
+	}
+	
+	
+	if(password==""){
+	document.getElementById("status3").innerHTML="Please Enter Password!";
+	return;
+	}else if(password.length<=5){
+		document.getElementById("status3").innerHTML="Password-min 6 Characters!";
+	return;
+	}else{
+	document.getElementById("status3").innerHTML="";
+	
+	}
+	
+	if(mob==""){
+	document.getElementById("status4").innerHTML="Please enter Min 10-digit mobile number!";
+	return;
+	}else if(!letters.test(mob)){
+		document.getElementById("status4").innerHTML="Please enter at least 10 Characters!";
+		return;
+	}else{
+	document.getElementById("status4").innerHTML="";
+	}
+	
+	if(strCity==0){
+	document.getElementById("status5").innerHTML="Please Select your City!";
+		return; 
+	}else{document.getElementById("status5").innerHTML="";}
+	
+	
+	if(strCourse==0){
+	document.getElementById("status6").innerHTML="Please select your Course!";
+	}else{
+	document.getElementById("status6").innerHTML="";
+	}
+	
+}
+
+
+</script>
+</body>
+</html>

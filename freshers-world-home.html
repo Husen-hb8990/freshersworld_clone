@@ -1,0 +1,1418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Freshers World</title>
+  <link rel="icon" href="page-logo.png">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="fw-home-page.css">
+</head>
+
+<body style="background-color:#f2f2f2;">
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-up"></i></button>
+<div class="container">
+	<img src="bell1.png"class="bell1"></a>
+	<div class="notification_box sub_message" style="padding-top:7px;bottom:38px;display:none;">
+		<span class="bell_subscribe">You have blocked Job Notifications Click on the bell icon and follow the image to unblock the notifications</span>
+	</div>
+</div>
+
+<!---nav bar--->
+	<div  class="navigation_bar" style="border-bottom:3px solid #f16622;display:inline-block;">
+	
+	<a href="#">
+	<img class="image" src="logo.png"></a>
+	
+	
+			<div class="dropdown">
+					<button class="dropbtn" style="margin-left:20px;margin-top:7px;">Jobs
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+						<a href="Fw_JobListing_Trail_1.html" target="_blank" style="color:#333";><b>Jobs By Category</b></a>
+						<a href="Fw_JobListing_Trail_1.html" target="_blank">IT/Software</a>
+						<a href="Fw_JobListing_Trail_1.html" target="_blank">Core Technical</a>
+						<a href="Fw_JobListing_Trail_1.html" target="_blank">Core Technical</a>
+						<a href="Fw_JobListing_Trail_1.html" target="_blank">Govt.Sector</a>
+						<a href="Fw_JobListing_Trail_1.html" target="_blank">MBA Jobs</a>
+						<a href="Fw_JobListing_Trail_1.html" target="_blank">Internship Jobs</a>
+						<a href="Fw_JobListing_Trail_1.html" target="_blank">Diploma Jobs</a>
+						<a href="Fw_JobListing_Trail_1.html" target="_blank">Research</a>
+						<a href="Fw_JobListing_Trail_1.html" target="_blank">Defence</a>
+						<a href="Fw_JobListing_Trail_1.html" target="_blank">BPO Jobs</a>
+						<a href="Fw_JobListing_Trail_1.html" target="_blank">Part-Time Jobs</a>
+						</div>	
+			</div>
+
+			<div class="dropdown">
+				<button class="dropbtn">Placement Paper <i class="fa fa-caret-down"></i>
+				</button>
+					<div class="dropdown-content">
+						<a href="#" style="color:#333";><b>Placement Papers</b></a>
+						<a href="#">Mu Sigma</a>
+						<a href="#">BSNL</a>
+						<a href="#">ISRO</a>
+						<a href="#">HCL</a>
+						<a href="#">AMAZON</a>
+						<a href="#">CTS</a>
+						<a href="#">TCS</a>
+						<a href="#">BMRCC</a>
+						<a href="#">DRDO</a>
+						<a href="#">GATE</a>
+					
+				</div>
+		</div>
+				
+			<div class="dropdown">
+					<button class="dropbtn">Institutes & Courses <i class="fa fa-caret-down"></i></button>
+					<div class="dropdown-content">
+						<a href="#" style="color:#333;"><b>Career Directory</b></a>
+						<a href="#">Training Institutes</a>
+						<a href="#">Training Courses</a>
+						<a href="#">Colleges & Universities</a>
+						<a href="#">Educational Consultants</a>
+						<a href="#" style="color:#333;"><strong>Higher Study In India</strong></a>
+						<a href="#">MBA/PGDM</a>
+						<a href="#">MCA</a>
+						<a href="#">M.Tech</a>
+						<a href="#">M.Sc</a>
+						<a href="#">M.A.</a>
+				
+				</div>
+		</div>		
+
+			
+				
+					<a href="#myModal" id="btn1"  style="text-decoration:none;margin-right:15px;" class="login">
+					<i style="font-size:14px;margin-left:20px;color:#dcdcdc" class="fa">&#xf023;</i> Login <span style="margin-left:10px;"|</a>
+					
+					
+					<a href="fw-registration.html" target="_blank" class="registration" style="text-decoration:none"> <span class="glyphicon glyphicon-user"></span> Register Free</a>
+					<a href="#" class="institutes" style="text-decoration:none;">Institutes</a>
+					<a href="#" class="employer" style="text-decoration:none;">Employer</a>
+					<a href="#" class="employer" style="text-decoration:none;margin-left:25px;">Post Job</a>
+					<span style="color:white;background-color:#f16622;">Free</span>
+			
+	</div> <!---closing of nav bar--->
+	
+<!---Login Form--->
+<div class="container">
+		  <!-- Modal -->
+		  <div class="modal fade" id="myModal" role="dialog">
+			<div class="modal-dialog">
+			
+			  <!-- Modal content-->
+			  <div class="modal-content">
+				<div class="modal-header" style="padding:35px 50px;background-color:#333">
+				  <button type="button" class="close" data-dismiss="modal">&times;</button>
+				  <h4 style=" background-color: #333;color:white !important;text-align: center;font-size: 30px;"><span class="glyphicon glyphicon-user" style="font-size:26px;color:#fff;"></span> Jobseeker Login</h4>
+				</div>
+				<div class="modal-body" style="padding:40px 50px;">
+				  <form role="form">
+					<div class="form-group">
+					  <label for="email"><span class="glyphicon glyphicon-envelope"></span> Email</label>
+					  <input type="text" class="form-control" id="email" placeholder="Enter Email">
+					</div>
+					<div class="form-group">
+					  <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
+					  <input type="password" class="form-control" id="psw" placeholder="Enter Password">
+					</div>
+					<div class="checkbox">
+					  <label><input type="checkbox" value="" checked><span style="font-weight:600">Remember me</span></label>
+					</div>
+
+					  <button type="submit" class="btn btn-success btn-block" style="background-color:#ff5a00;font-size:16px;font-weight:600;"><span class="glyphicon glyphicon-log-in"></span> Login</button>
+				  </form>
+				</div>
+				<div class="modal-footer" style="display:inline-block">
+				  <button type="submit" class="btn btn-danger btn-default pull-left" style="display:inline-block" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+				  <p style="text-align:center;display:inline-block;">Not a member? <a href="#">Sign Up</a></p>
+				  <p style="margin-right:200px;margin-left:2px;display:inline-block;">Forgot <a href="#">Password?</a></p>
+				</div>
+			  </div>
+			  
+			</div>
+		  </div> 
+</div><!--closing of login form--->
+
+<!---Login Form--->
+<div class="container">
+		  <!-- Modal -->
+		  <div class="modal fade" id="myModal" role="dialog">
+			<div class="modal-dialog">
+			
+			  <!-- Modal content-->
+			  <div class="modal-content">
+				<div class="modal-header" style="padding:35px 50px;background-color:#333">
+				  <button type="button" class="close" data-dismiss="modal">&times;</button>
+				  <h4><span class="glyphicon glyphicon-user"></span> Jobseeker Login</h4	>
+				</div>
+				<div class="modal-body" style="padding:40px 50px;">
+				  <form role="form">
+					<div class="form-group">
+					  <label for="email"><span class="glyphicon glyphicon-envelope"></span> Email</label>
+					  <input type="text" class="form-control" id="email" placeholder="Enter Email">
+					</div>
+					<div class="form-group">
+					  <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
+					  <input type="password" class="form-control" id="psw" placeholder="Enter Password">
+					</div>
+					<div class="checkbox">
+					  <label><input type="checkbox" value="" checked><span style="font-weight:600">Remember me</span></label>
+					</div>
+
+					  <button type="submit" class="btn btn-success btn-block" style="background-color:#ff5a00;font-size:16px;font-weight:600;"><span class="glyphicon glyphicon-log-in"></span> Login</button>
+				  </form>
+				</div>
+				<div class="modal-footer" style="display:inline-block">
+				  <button type="submit" class="btn btn-danger btn-default pull-left" style="display:inline-block" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+				  <p style="text-align:center;display:inline-block;">Not a member? <a href="#">Sign Up</a></p>
+				  <p style="margin-right:200px;margin-left:2px;display:inline-block;">Forgot <a href="#">Password?</a></p>
+				</div>
+			  </div>
+			  
+			</div>
+		  </div> 
+</div><!--closing of login form--->
+
+<div class="row main">
+	<div class="col-lg-8 search">
+		<input type="text" class="input" placeholder="Keyword" id="keyword">
+				<select  style="padding:7px 25px;width:230px;" id="course"  type="text"  name="current city">	
+				  <option>Select Course</option>
+				  <optgroup label="Popular Courses">
+				  <option value="0">BE/B.Tech</option>
+				  <option value="1">MBA/PGDM</option>
+				  <option value="2">MCA</option>
+				  <option value="3">ME/M.Tech</option>
+				  <option value="4">MSc</option>
+				  <optgroup label="UG Courses">
+				  <option value="5">B.Arch</option>
+				  <option value="6">B.Com</option>
+				  <option value="7">B.Pharm</option>
+				  <option value="8">BA</option>
+				  <option value="9">BBA/BBM</option>
+				  <option value="10">BCA</option>
+				  <option value="11">BDS</option>
+				  <option value="12">BE/B.Tech</option>
+				  <option value="13">BEd</option>
+				  <option value="14">BHM</option>
+				  <option value="15">BSc</option>
+				  <option value="16">BVSc</option>
+				  <option value="17">CA</option>
+				  <option value="18">CS</option>
+				  <option value="19">ICWA</option>
+				  <option value="20">LLB</option>
+				  <option value="21">MBBS</option>
+				  <option value="22">LLB</option>
+				  <option value="23">B.Fashion Tech</option>
+				  <option value="24">BPEd</option>
+				  <option value="25">BSW</option>
+				  <optgroup label="PG Courses">
+				  <option value="26">LLM</option>
+				  <option value="27">M Phill / Ph.D</option>
+				  <option value="28">M Arch</option>
+				  <option value="29">M Com</option>
+				  <option value="30">M Pharm</option>
+				  <option value="31">MA</option>
+				  <option value="32">MBA/PGDM</option>
+				  <option value="33">MCA</option>
+				  <option value="34">MD</option>
+				  <optgroup label="Other Courses">
+				  <option value="35">Diploma</option>
+				  <option value="36">Certificate Course(ITI)</option>
+				  <option value="37">Vocational Training</option>
+				  <option value="38">12 Pass(HSE)</option>
+				  <option value="39">10 Pass(SSC)</option>
+				  <option value="40">Upto 9th Standard</option>
+				  <option value="41">No Education/Schooling</option>
+			</select>
+					<input type="text" class="input" placeholder="Enter Location">
+					<button type="button" id="btn">Search Jobs</button><br>	
+					<div style="display:inline-block; color:#fff;margin-top:-20px;">
+						<p style="display:inline-block;margin-left:35px;margin-right:280px;font-size:12px;">Eg. php, Wipro, Software</p>
+						<p style="display:inline-block;font-size:12px;margin-left:5px;">Eg.Kolkata,Mumbai</p>
+						<a href="#"><p id="advsearch">Advanced Search</p></a>
+				   </div>
+		
+		
+		
+	</div>
+	
+	<div class="col-lg-4 register">
+		<p style="font-size:12px;margin-top:10px;text-align:center;color:#000;">Are you a Fresher? Looking for your first Dream Job?</p>
+				<a href="fw-registration.html" target="_blank"><button type="button" id="btn" style="margin-left:140px;padding:10px;box-shadow: 0px 2px 5px 0px #666;margin-bottom:10px;">Register Now</button></a><br>
+				<p style="font-size:12px;margin-top:10px;text-align:center;">Apply for Thousands of Jobs across India, Its FREE</p>
+	</div>
+</div>
+
+<div class="row main">
+	
+	<div class="col-lg-2" style="height:50px;width:10%;background-color:#fff;margin-left:30px;color:#f16622;border:1px solid #dcdcdc;border-bottom:1px solid #f16622;background-color:#f16622;border-right:none;">
+		
+			<h3 style="font-size:15px;font-weight:600;color:#fff;">LATEST JOBS</h3>
+		
+	</div>
+	<div class="col-lg-10" style="height:50px;width:55%;background-color:#fff;border:1px solid #dcdcdc;padding-top:15px;">
+		<a href="#" class="job">All Jobs</a>
+		<span class="divide">|</span>
+		<a href="#" class="job">Software Jobs</a>
+		<span class="divide">|</span>
+		<a href="#" class="job">Govt Jobs</a>
+		<span class="divide">|</span>
+		<a href="#" class="job">Core Technical Jobs</a>
+		<span class="divide">|</span>
+		<a href="#" class="job">MBA Jobs</a>
+		<span class="divide">|</span>
+		<a href="#" class="job">Bank Jobs</a>
+		<span class="divide">|</span>
+		<a href="#" data-toggle="dropdown" class="dropdown-toggle more">More <i class="fa fa-caret-down"></i></a>
+		<ul class="dropdown-menu">
+				<li><a href="#">Defence Jobs</a></li>
+				<li><a href="#">Research Jobs</a></li>
+				<li><a href="#">BPO Jobs</a></li>
+				<li><a href="#">Walk-ins</a></li>
+				<li><a href="#">BSc / BCA / BBM</a></li>
+				<li><a href="#">Teaching Jobs</a></li>
+				<li><a href="#">Diploma Jobs</a></li>
+				<li><a href="#">1-3 Yrs Exp</a></li>
+				<li><a href="#">Internships</a></li>
+				<li><a href="#">Scholarships</a></li>
+				<li><a href="#">Bank Jobs</a></li>
+				<li><a href="#">Tech Support</a></li>
+				<li><a href="#">Health Care</a></li>
+				<li><a href="#">Hospitality</a></li>
+				<li><a href="#">Part Time Jobs</a></li>
+				<li><a href="#">Finance Jobs</a></li>
+				<li><a href="#">More Jobs</a></li>		
+		</ul>
+	</div>
+	
+	<div class="col-lg-12" style="height:250px;width:65%;background-color:#fff;margin-left:30px;border:1px solid #dcdcdc;border-top:none;">
+		<div class="row">
+			<div class="column">
+				<ul class="joblist">
+					<li>Eduraka Recruitment</li>
+					<li>IBPS Recruitment</li>
+					<li>TATA AIG GENERAL INSURANCE</li>
+					<li>Healthplix</li>
+					<li>Accenture Recruitment</li>
+					<li>AS INFO SOLVE</li>
+					<li>Urbanpro</li>
+					<li>KarKare Displays</li>
+					<li>Philips India Ltd</li>
+					<li>HCL Recruitment</li>
+				</ul>
+			</div>
+			
+			<div class="column">
+				<ul class="joblist">
+					<li>Subex Recruitment</li>
+					<li>TATA ELXSI</li>
+					<li>DRDO Recruitment</li>
+					<li>Pratian Technologies</li>
+					<li>HDFC Life</li>
+					<li>UPSC Recruitment</li>
+					<li>Mat Decor</li>
+					<li>ROBOES INC</li>
+					<li>Pravritti consulting services</li>
+					<li>PERCS</li>
+				</ul>
+			</div>
+
+			<div class="column" style="height:80px;">
+				<ul class="joblist">
+					<li>Extrieve Technologies</li>
+					<li>Ansaldo STS A Hitachi Company</li>
+					<li>Ribbon Communications Formerly...</li>
+					<li>Microland Recruitment</li>
+					<li>Liquid Propulsion Systems Cent...</li>
+					<li>Workcruiters Pvt. Ltd.</li>
+					<li>Bridgespan Consultancy</li>
+					<li>Kennametal Shared Services Pvt...</li>
+					<li>Innovative concepts</li>
+					<li>FMCL GLOBAL PVT LTD</li>
+				</ul>
+			</div>
+			
+	</div>
+	
+	</div>
+	<div class="col-lg-12" style="height:50px;width:65%;background-color:#dcdcdc;margin-left:30px;border:1px solid #dcdcdc;padding:20px;">
+	
+			<a href="#" class="bottom">Railway Recruitment</a>
+			<a href="#" class="bottom">IBPS Notifications 2018</a>
+			<a href="#" class="bottom">SBI Recruitment</a>
+			<a href="#" class="bottom">DRDO Recruitment</a>
+	
+			
+		<div class="col-lg-3 latest-jobs">
+					<a href="#">View All Jobs</a>
+				
+				</div>	
+		
+	</div>
+	
+	<div class="col-lg-12 carousel">
+		<div class="inline-block jobseeker-block tab-selected" role="button">Jobseekers</div>
+		<div class="inline-block employer-block" role="button">Employers</div>	
+		<div class="jobseeker-filter display-none display-inline-block" id="jobseeker-right-block">
+			<div class="margin-bottom-12">What Jobseekers say about Freshsersworld?</div>
+				<div id="myCarousel" class="carousel-slide">
+					<ol class="carousel-indicators">
+						<li class="item1 active"></li>
+						<li class="item2"></li>
+						<li class="item3"></li>
+						<li class="item4"></li>
+					</ol>
+					
+					<div class="carousel-inner" role="listbox">
+						<div class="item active">
+							<div class="candidate-block">
+								<div class="name-block">
+									<div class="candi-name">VIBHA GIRI GOSWAMI</div>
+										<div class="candi-comp">Mindtree</div>
+								</div>
+							</div>
+								<div class="candi-testimonials">
+									<p class="margin_0">I sincerely thank freshersworld.com through which I got placed in mindtree. It provides a superb platform where you just need to focus on your skills and not worry about getting interview calls as freshersworld takes good care of it. I suggest every jobseeker to try here once as it is worth of it. I wish all the freshersworld candidates the very best upon their search for a successful career and once again kudos to freshersworld team for changing my life!</p>
+								</div>
+						</div>	
+						
+						<div class="item">
+							<div class="candidate-block">
+								<div class="name-block">
+									<div class="candi-name">M Praneeth Kumar</div>
+										<div class="candi-comp">Mindtree</div>
+								</div>
+							</div>
+								<div class="candi-testimonials">
+									<p class="margin_0">I sincerely thank freshersworld.com through which I got placed in Mindtree, one of the world`s largest Information Technology company. As a fresher, it is important to get enough opportunities to attend interviews with reputed companies and freshersworld helps numerous students across the country to do just that. It`s a dream come true for me!. Thanks to Almighty GOD. I wish all the freshersworld candidates the very best in their search for a successful career and once again kudos to the freshersworld team for changing my life!</p>
+								</div>
+						</div>	
+						
+						<div class="item">
+							<div class="candidate-block">
+								<div class="name-block">
+									<div class="candi-name">Kundan Kumar</div>
+										<div class="candi-comp">Mindtree</div>
+								</div>
+							</div>
+								<div class="candi-testimonials">
+									<p class="margin_0">I would like to thanks freshersworld for helping to get two job within a month after getting premium subscription. I got offer letter from mindtree and a very good startup. Freshersworld provided around 2-3 job openings per week for me. I recommend freshersworld to each of my friends and juniors. Thanks freshersworld team and keep helping the freshers who are working hard to get their dream job by providing them the ocean of opportunities.</p>
+								</div>
+						</div>	
+						
+						<div class="item">
+							<div class="candidate-block">
+								<div class="name-block">
+									<div class="candi-name">Abhishek Siddarth</div>
+										<div class="candi-comp">Mindtree</div>
+								</div>
+							</div>
+								<div class="candi-testimonials">
+									<p class="margin_0">Thank you Freshersworld for providing me an excellent opportunity with Mind tree. I am really happy to get an offer from Mindtree and I would urge all the freshers to sign up for Freshersworld</p>
+								</div>
+						</div>	
+						
+						<div class="item">
+							<div class="candidate-block">
+								<div class="name-block">
+									<div class="candi-name">Vijay Kumar M</div>
+										<div class="candi-comp">Toshiba</div>
+								</div>
+							</div>
+								<div class="candi-testimonials">
+								<p class="margin_0">Firstly, I would like to thank Freshersworld for getting me a job in Toshiba. Initially I was not getting placed in any company being in MSRIT and I was bit worried about my career and after that I registered for Freshers world and after that they provided me a great opportunities with that I was able to place in a product company like Toshiba.I had a great experience with Freshersworld they provide ample of opportunities for Freshers.</p>
+								</div>
+						</div>	
+					</div>	
+		</div>
+	</div>
+</div>
+
+<div class="row main">
+	<div class="col-lg-12" style="height:50px;width:65%;background-color:#fff;margin-left:30px;border:1px solid #dcdcdc;border-bottom:1px solid #f16622;color:#f16622;margin-top:-90px;">
+		<h4 style="margin-top:20px;display:inline-block;font-size:16px;">JOBS BY CATEGORY</h4>
+		<h4  style="display:inline-block;float:right;padding:14px 0px 10px 75px;font-size:16px;"><a href="#"class="teamlease">TeamLease Jobs</a></h4>
+	</div>
+	
+	<div class="col-lg-12" style="height:250px;width:65%;background-color:#fff;margin-left:30px;border:1px solid #dcdcdc;border-top:none;margin-top:-40px;">
+		<div class="row">
+			<div class="column">
+				<ul class="joblist">
+					<li>IT/Software Jobs</li>
+					<li>Core Technical Jobs</li>
+					<li>Govt Jobs</li>
+					<li>MBA Jobs</li>
+					<li>Internship Jobs</li>
+					<li>Diploma Jobs</li>
+					<li>Research Jobs</li>
+					<li>Defence Jobs</li>
+					<li>BPO Jobs</li>
+					<li>Part Time Jobs</li>
+					<li>Bank Jobs</li>
+				</ul>
+			</div>
+			
+			<div class="column">
+				<ul class="joblist">
+					<li>Walkin Jobs</li>
+					<li>Teaching Jobs</li>
+					<li>Pharma Jobs</li>
+					<li>StartUp Jobs</li>
+					<li>BSc/BCA/BBM Jobs</li>
+					<li>Scholorships Jobs</li>
+					<li>Dream Jobs/5 lpa Jobs</li>
+					<li>1 to 3 Yr Exp Jobs</li>
+					<li>Tech Support Jobs</li>
+					<li>Health Care Jobs</li>
+					<li>Hospitality Jobs</li>
+					
+				</ul>
+			</div>
+
+			<div class="column" style="height:80px;">
+				<ul class="joblist">
+					<li>Retail Jobs</li>
+					<li>Journalism Jobs</li>
+					<li>Quality Control Jobs</li>
+					<li>Sports Jobs</li>
+					<li>Finance Jobs</li>
+					<li>Manpower Consultants Jobs</li>
+					<li>Hire and Train Jobs</li>
+					<li>Other Jobs</li>
+				</ul>
+			</div>
+					<div class="col-lg-3 al-jobs">
+						<a href="#">View All Jobs</a>
+					</div>
+	</div>
+		
+	
+	</div>
+	
+	<div class="col-lg-12 choose1">
+		<div class="col-lg-12 role-heading" title="Choose your Job Role">Choose your Job Role</div>
+	</div>
+	<div class="col-lg-12 choose" title="Choose your Job Role">
+		<div class="col-lg-12 role-listing padding-none">
+			<div class="col-lg-6 inline-block role-1">
+				<div class="role-icons">
+					<img src="care.jpg" alt="Choose your Job Role" title="Choose your Job Role" style="color:#f16622;height:47px;width:47px;">
+						<p class="img-titles">BPO / Telecaller</p>
+				</div>
+			</div>
+			
+			<div class="col-lg-6 inline-block role-1">
+				<div class="role-icons">
+					<img src="keybrd.png" alt="Choose your Job Role" title="Choose your Job Role" style="color:#f16622;height:47px;width:47px;">
+					<p class="img-titles">Data Entry / Back Office</p>
+				</div>
+			</div>
+			
+				<div class="col-lg-6 inline-block role-1">
+					<div class="role-icons">
+						<img src="hospital.png" alt="Choose your Job Role" title="Choose your Job Role" style="color:#f16622;height:47px;width:47px;">
+						<p class="img-titles">Hospitality Executive</p>
+					</div>
+				</div>
+				
+				<div class="col-lg-6 inline-block role-1">
+					<div class="role-icons">
+						<img src="office.jpg" alt="Choose your Job Role" title="Choose your Job Role" style="color:#f16622;height:47px;width:47px;">
+						<p class="img-titles">Office Assistant / Helper</p>
+					</div>
+				</div>
+				
+				<div class="col-lg-6 inline-block role-1">
+					<div class="role-icons">
+						<img src="delivery.png" alt="Choose your Job Role" title="Choose your Job Role" style="color:#f16622;height:47px;width:47px;">
+						<p class="img-titles">Delivery / Collections</p>
+					</div>
+				</div>
+				
+				<div class="col-lg-6 inline-block role-1">
+					<div class="role-icons">
+						<img src="telephone.jpg" alt="Choose your Job Role" title="Choose your Job Role" style="color:#f16622;height:47px;width:47px;">
+						<p class="img-titles">Hospitality Executive</p>
+					</div>
+				</div>
+				
+				<div class="col-lg-12 register-now">Register Now</div>
+		</div>
+		
+	</div>
+	
+	
+	
+	<div class="col-lg-12" style="height:40px;width:65%;background-color:#fff;margin-left:30px;border:1px solid #dcdcdc;color:#f16622;margin-top:-220px;display:inline;">
+		<h4 style="display:inline;padding-top:20px">Updates</h4>
+		<marquee>
+		<div style="padding-bottom:10px;font-weight:600;">
+		<a href="#">IBPS PO and Clerical exam solved question papers |</a>&nbsp;&nbsp;
+		<a href="#">FW Blog : Explore our World of Work |</a>
+		<a href="#">Latest Sarkari Results - 2018 |</a>
+		</div>
+		</marquee>
+		
+	</div>
+	
+	<div class="col-lg-12" style="height:40px;width:65%;background-color:#fff;font-weight:600;margin-left:30px;border:1px solid #dcdcdc;border-bottom:1px solid #f16622;color:#f16622;margin-top:-160px;">
+		<h4>JOBS BY ROLES</h4>
+	</div>
+	<div class="col-lg-12" style="height:250px;width:65%;background-color:#fff;margin-left:30px;border:1px solid #dcdcdc;border-top:none;margin-top:-120px;">
+		
+		<div class="row">
+			<div class="column">
+				<ul class="joblist">
+					<li>Accountant Jobs</li>
+					<li>Architect Jobs</li>
+					<li>BPO Jobs</li>
+					<li>Telecaller Jobs</li>
+					<li>Content Writer Jobs</li>
+					<li>Data Entry / Back Office</li>
+					<li>Doctor / Physician</li>
+					<li>Engineer (Core, Non-IT)</li>
+					<li>HR / Admin Jobs</li>
+					<li>Medical Representative</li>
+					<li>SEO / Social Media</li>
+				</ul>
+			</div>
+			
+			<div class="column">
+				<ul class="joblist">
+					<li>IT Software-Engineer</li>
+					<li>IT Hardware Engineer</li>
+					<li>IT - Mobile Developer</li>
+					<li>Delivery Executive</li>
+					<li>Management Trainee</li>
+					<li>Fashion Designer Jobs</li>
+					<li>Design / Animation Jobs</li>
+					<li>Counsellor Jobs</li>
+					<li>Media / Journalism / Events</li>
+					<li>Chef / Cook Jobs</li>
+					<li>Sales / Marketing Executive</li>
+					
+					
+				</ul>
+			</div>
+
+			<div class="column" style="height:80px;">
+				<ul class="joblist">
+					<li>Trainer Jobs</li>
+					<li>Mechanic / Fitter / Production</li>
+					<li>Beautician / Spa Jobs</li>
+					<li>Receptionist / Front Office</li>
+					<li>Retail / Store Executive</li>
+					<li>Customer Service Executive</li>
+					<li>Steward Jobs</li>
+					<li>Nurse Jobs</li>
+					<li>Other Jobs</li>
+				</ul>
+			</div>
+			<div class="col-lg-3 all-jobs">
+					<a href="#">View All Jobs</a>
+				
+				</div>	
+	</div>
+		
+		
+		
+		
+	</div>
+	
+	<div class="col-lg-12 subscribe">
+		<p style="color:#fff;background-color:#ed5401;padding:5px;margin-top:30px;">Get govt Jobs straight to your mailbox from Freshsersworld</p>
+		<input type="button" value="Subscribe" class="subscribe-btn">
+	</div>
+	
+	<div class="col-lg-2" style="height:70px;width:65%;background-color:#fff;font-weight:600;margin-left:30px;border:1px solid #dcdcdc;color:#f16622;margin-top:-70px;display:inline;">
+		
+		
+			<h4 style="padding-top:15px;width:151px;display:inline;">Companies Hiring</h4>
+			
+			<div class="logos">
+				<img src="dell.jpg"> |
+				<img src="sonus.jpg"> |
+				<img src="mindtree.jpg"> |
+				<img src="practo.jpg"> |
+				<img src="informatica.jpg"> |
+				<img src="toshiba.jpg">
+			</div>
+	</div>
+		
+	
+	<div class="col-lg-12" style="height:40px;width:65%;background-color:#fff;font-weight:600;margin-left:30px;border:1px solid #dcdcdc;border-bottom:1px solid #f16622;color:#f16622;margin-top:20px;">
+		<h5>TODAYS JOBS</h5>
+		
+	</div>
+	
+	<div class="col-lg-12" style="height:auto;overflow:auto;width:65%;background-color:#fff;margin-left:30px;border:1px solid #dcdcdc;border-top:none;">
+	
+		<a href="#" class="todays-jobs">Associate Project Manager Jobs in Delhi,Faridabad,Gurgaon - Probity research</a><br>
+		<a href="#" class="todays-jobs">Java Developers Jobs in Coimbatore - Systech Infovations Pvt. Ltd.</a><br>
+		<a href="#" class="todays-jobs">Works Manager for Heavy Vehicles Automobiles Jobs in Ahmedabad - Talent Corner HR Services Pvt. Ltd.</a><br>
+		<a href="#" class="todays-jobs">Business Development Executive Jobs in Pune - Proeducen</a><br>
+		<a href="#" class="todays-jobs">Manager GST/ Indirect Tax Jobs in Mumbai - Jignesh Kansara and associates Chartered Accountants</a><br>
+		<a href="#" class="todays-jobs">Manager Audit & Direct Tax Jobs in Mumbai - Jignesh Kansara and associates Chartered Accountants</a><br>
+		<a href="#" class="todays-jobs">Marketing & Reservations Executive Jobs in Dehradun - Sea Hawk Tours & Travels</a><br>
+		<a href="#" class="todays-jobs">FULL STACK DEVELOPER Jobs in Delhi - BLACKCOFFER</a><br>
+		<a href="#" class="todays-jobs">Chartered Accountant Jobs in Mumabai,Navi Mumbai - Jignesh Kansara and Associates</a><br>
+		<a href="#" class="todays-jobs">Sale and Marketing Executive Jobs in Lucknow - Team mp2it Pvt Ltd</a><br>
+		<a href="#" class="todays-jobs">Store Keeper Jobs in Chennai - MINDCOM SERVICES PVT.LTD.</a>
+		
+	</div>
+	
+	
+	<div class="col-lg-12 need">
+		<p style="font-size:19px;margin-bottom:3px;text-align:center;color:#333;font-weight:700;">
+			<b>Need a Institute/Coaching Class?</b>
+		</p>
+		<p style="font-size:14px;text-align:center;">IT Courses / Govt Exam Preparation</p>
+		<p style="text-align:center">Higher Studies / Studies Abroad</p>
+	
+		<div class="enquiry">
+			<input type="button" class="enquiry-btn" value="Post Your Training Enquiry Now	">
+		
+		</div>
+	</div>
+	<div class="col-lg-12 need1">
+		<p>Post an enquiry and get instant responses from institutes and best Coaching Classes in your city</p>
+	</div>
+	
+	<div class="col-lg-12" style="height:40px;width:65%;background-color:#fff;margin-left:30px;border:1px solid #dcdcdc;border-bottom:1px solid #f16622;color:#f16622;margin-top:10px;">
+		<div class="col-lg-7" style="margin-top:10px;">
+			<a href="#" class="govt-jobs">GOVERNMENT JOBS</a>
+		</div>
+		<div class="col-lg-5" style="margin-top:10px">
+		<a href="#" class="defence-jobs">Defence Govt Jobs | </a>&nbsp;
+		<a href="#" class="defence-jobs">Diploma Govt Jobs</a>
+		</div>
+	</div>
+	
+	<div class="col-lg-12" style="height:200px;width:65%;background-color:#fff;margin-left:30px;border:1px solid #dcdcdc;border-top:none;">
+		
+		<div class="row">
+			<div class="column">
+				<ul class="joblist">
+					<li>Govt Jobs in Odisha</li>
+					<li>CG Govt Jobs</li>
+					<li>HP Govt Jobs</li>
+					<li>Govt Jobs in Kerala</li>
+					<li>Govt Jobs in Chandigarh</li>
+					<li>Govt Jobs in Delhi</li>
+					
+				</ul>
+			</div>
+			
+			<div class="column">
+				<ul class="joblist">
+					<li>Govt Jobs in MP</li>
+					<li>Govt Jobs in West Bengal</li>
+					<li>Govt Jobs in Karnataka</li>
+					<li>Govt Jobs in Maharashtra</li>
+					<li>Govt Jobs in Gujarat</li>
+					<li>Govt Jobs in Punjab</li>					
+				</ul>
+			</div>
+
+			<div class="column" style="height:80px;">
+				<ul class="joblist">
+						<li>Govt Jobs in Rajasthan</li>
+						<li>TN Govt Jobs</li>
+						<li>Govt Jobs in AP</li>
+				</ul>
+			</div>
+				<div class="col-lg-3 govt">
+					<a href="#">View All Jobs</a>
+				
+				</div>	
+		</div>
+		
+	</div>
+	
+	<div class="col-lg-12" style="height:40px;width:65%;background-color:#fff;font-weight:600;margin-left:30px;border:1px solid #dcdcdc;border-bottom:1px solid #f16622;color:#f16622;margin-top:20px;">
+		<h5>PLACEMENT PAPERS</h5>
+		
+	</div>
+	
+	<div class="col-lg-12" style="height:300px;width:65%;background-color:#fff;margin-left:30px;border:1px solid #dcdcdc;border-top:none;color:#666666;">
+		<div class="row">
+			<div class="column">
+				<ul class="joblist">
+					<li>Quantitative Aptitude</li>
+					<li>Verbal Ability</li>
+					<li>Logical Reasoning</li>
+					<li>Data Interpretation</li>
+					<li>Current Affairs</li>
+					<li>SBI Bank Preparation</li>
+					<li>IBPS Preparation</li>
+					<li>HDFC Bank Preparation</li>
+					<li>UPSC Preparation</li>
+					<li>General Knowledge</li>
+					<li>Interview Preparation</li>
+				</ul>
+			</div>
+			
+			<div class="column">
+				<ul class="joblist">
+					<li>Group Discussion</li>
+					<li>Resume Format</li>
+					<li>Google Placement Papers</li>
+					<li>Flipkart Placement Papers</li>
+					<li>Yahoo Placement Papers</li>
+					<li>Kerala PSC Preparation</li>
+					<li>GATE Preparation</li>
+					<li>CAT Preparation</li>
+					<li>Mech Engg Question Paper</li>
+					<li>Amazon Placement Papers</li>
+					<li>Samsung Placement Papers</li>
+				</ul>
+			</div>
+
+			<div class="column" style="height:80px;">
+				<ul class="joblist">
+					<li>HTC Placement Papers </li>
+					<li>SSC EXam Preparation</li>
+					<li>Air India Exam Preparation</li>
+					<li>BSNL Exam Preparation</li>
+					<li>Civil Engg Question Papers</li>
+					<li>Electronics Question Papers</li>
+					<li>Elect Engg Question Papers</li>
+					<li>Comp Sc. Question Papers</li>
+				</ul>
+			</div>
+			<div class="col-lg-3 view-all-papers">
+					<a href="#">View All Papers</a>
+				
+				</div>	
+	</div>
+		
+	</div>
+	
+	<div class="col-lg-12" style="height:40px;width:65%;background-color:#fff;font-weight:600;margin-left:30px;border:1px solid #dcdcdc;border-bottom:1px solid #f16622;color:#f16622;margin-top:20px;">
+		<h5>JOBS BY COMPANY</h5>
+		
+	</div>
+	
+	<div class="col-lg-12" style="height:250px;width:65%;background-color:#fff;margin-left:30px;border:1px solid #dcdcdc;border-top:none;color:#666666;">
+		<div class="row">
+			<div class="column">
+				<ul class="joblist">
+					<li>HAL Recruitment</li>
+					<li>IBPS Recruitment</li>
+					<li>BEL Recruitment</li>
+					<li>SBI Recruitment</li>
+					<li>AAI Recruitment</li>
+					<li>Air India Recruitment</li>
+					<li>BSNL Recruitment</li>
+					<li>UPPSC Recruitment</li>
+					<li>TNPSC Recruitment</li>
+					<li>RPSC Recruitment</li>
+				</ul>
+			</div>
+			
+			<div class="column">
+				<ul class="joblist">
+					<li>MPPSC Recruitment</li>
+					<li>SSC Recruitment</li>
+					<li>UPSC Recruitment</li>
+					<li>Railway Recruitment</li>
+					<li>Indian Navy Recruitment</li>
+					<li>Indian Army Recruitment</li>
+					<li>Indian Air Force Recruitment</li>
+					<li>DRDO Recruitment</li>
+					<li>FCI Recruitment</li>
+					<li>UPPSC Recruitment</li>
+				</ul>
+			</div>
+
+			<div class="column" style="height:60px;">
+				<ul class="joblist">
+					<li>Police Recruitment</li>
+					<li>GAIL Recruitment</li>
+					<li>PGCIL Recruitment</li>	
+					<li>ISRO Recruitment</li>	
+					<li>RBI Recruitment</li>	
+					<li>IRCON Recruitment</li>	
+					<li>KPSC Recruitment</li>	
+					<li>Teamlease Recruitment</li>
+				</ul>
+			</div>
+			<div class="col-lg-3 view-all-companies">
+					<a href="#">View All Companies</a>
+				
+				</div>	
+	</div>
+		
+	</div>
+	
+	<div class="col-lg-12" style="height:40px;width:65%;background-color:#fff;font-weight:600;margin-left:30px;border:1px solid #dcdcdc;border-bottom:1px solid #f16622;margin-top:20px;">
+				<div class="col-lg-6 engineering-jobs">
+					<a href="#" class="engineering">ENGINEERING JOBS</a>
+				</div>
+	
+	</div>
+	
+	<div class="col-lg-12" style="height:150px;width:65%;background-color:#fff;margin-left:30px;border:1px solid #dcdcdc;border-top:none;">
+		<div class="row">
+			<div class="column">
+				<ul class="joblist">
+					<li>Civil Engineering Jobs</li>
+					<li>Mechanical Engineering Jobs</li>
+					<li>Chemical Engineering Jobs</li>
+					<li>ISRO Recruitment For Engineers</li>
+					<li>DRDO Recruitment For Engineers</li>
+				</ul>
+			</div>
+			
+			<div class="column">
+				<ul class="joblist">
+					<li>RRB Recruitment for Engineer</li>
+					<li>BEL Recruitment For Engineers</li>
+					<li>Aeronautical Engineering Jobs</li>
+					<li>Computer Science Engineering Jobs</li>
+					<li>ECE Jobs</li>
+				</ul>
+			</div>
+
+			<div class="column" style="height:60px;">
+				<ul class="joblist">
+					<li>EEE Jobs</li>
+					<li>B Tech Jobs</li>
+					<li>Automobile Engineering Jobs</li>	
+				</ul>
+			</div>
+			<div class="col-lg-3 view-all-jobs">
+					<a href="#">View All Jobs</a>
+				
+				</div>	
+	</div>
+		
+	</div>
+	
+	<div class="col-lg-12" style="height:40px;width:65%;background-color:#fff;margin-left:30px;border:1px solid #dcdcdc;border-bottom:1px solid #f16622;color:#f16622;margin-top:20px;">
+		<div class="col-lg-12">
+			
+				<div class="col-lg-6 sarkari-sub-heading">
+					<a href="#" class="skr-result">SARKARI RESULTS</a>
+				</div>
+				<div class="col-lg-6 sarkari-right">
+					<a href="#" class="sarkari-right">Latest Notifications  |</a>
+					<a href="#" class="sarkari-right1">Admit Cards  |</a>
+					<a href="#" class="sarkari-right2">Answer Keys </a>
+				</div>
+		</div>
+			
+	</div>
+	
+	<div class="col-lg-12" style="height:130px;width:65%;background-color:#fff;margin-left:30px;border:1px solid #dcdcdc;border-top:none;padding:15px;">
+		<a href="#" class="sarkari">UP Police Announced The Result Of Fireman</a><br>
+		<a href="#" class="sarkari">UP Police Announced The Result Of Asst Operator (List-lll)</a><br>
+		<a href="#" class="sarkari">UP Police Announced The Result Of Asst Operator (List-ll)</a><br>
+		<a href="#" class="sarkari">UP Police Announced The Result Of Asst Operator (List-l)</a><br>
+		<a href="#" class="sarkari">DHMO, Medak Announced The Result Of Specialist Doctors & Medical Officer & Paramedical</a>
+		<div class="col-lg-3 result-btn">
+			<a href="#">View All Results</a>
+		
+		</div>
+		
+	</div>
+	
+	<div class="col-lg-12" style="height:40px;width:65%;background-color:#fff;margin-left:30px;border:1px solid #dcdcdc;border-bottom:1px solid #f16622;color:#f16622;margin-top:20px;">
+		<h5>CAREER ADVICE</h5>
+		
+	</div>
+	
+	<div class="col-lg-12" style="height:150px;width:65%;background-color:#fff;margin-left:30px;border:1px solid #dcdcdc;border-top:none;color:#666666;font-size:14px;">
+		<div class="row">
+			<div class="column">
+				<ul class="joblist">
+					<li>Interview Tips</li>
+					<li>Resume Tips</li>
+					<li>GD Tips & Mocks</li>
+					<li>Campus Fests</li>
+					<li>Corporate Contests</li>
+				</ul>
+			</div>
+			
+			<div class="column">
+				<ul class="joblist">
+					<li>Buy Books Online</li>
+					<li>Success Stories</li>
+					<li>Defence</li>
+					<li>Scholarships</li>
+				</ul>
+			</div>
+
+			<div class="column">
+				<ul class="joblist">
+					<li>MBA Junction</li>
+					<li>Free Job Alert</li>
+					<li>Employment News</li>
+					<li>Sarkari Naukri</li>
+				</ul>
+			</div>	
+	</div>
+	</div>
+	<div class="col-lg-12" style="height:300px;width:65%;background-color:#EAEFF2;margin-left:30px;border:1px solid #dcdcdc;;margin-top:20px;color:#666666">
+		<img src="https://d2zxo3dbbqu73w.cloudfront.net/fwassets-test/51835557/images/APP-Image-min.png" style="padding-top:20px;float:left;">
+		<div class="col-lg-5" style="float:left;width:41%;">
+		
+			<div class="app1">Apply Jobs on the go</div>
+			<div class="app2">Get instant notifications of Latest Jobs and Call letters</div>
+			<div class="app3">Get Govt recruitment Notifications, Admit cards, and Result</div>
+			<div class="app4">Track your Interview Result</div>
+		</div>
+		
+		<div class="col-lg-4 android">
+			<div class="col-lg-5">
+				<img src="https://d2zxo3dbbqu73w.cloudfront.net/fwassets-test/51835557/images/android_home.png">
+			</div>
+			<div class="col-lg-6"style="width:50%;margin-bottom:10px;">
+				<p>Speed up your Job Search with our Free Android App</p>	
+			</div>
+			<div class="install-app">
+				<a href="#"class="download">Download now</a>
+			
+			</div>
+		</div>
+</div>
+
+
+<div class="col-lg-12" style="margin-left:10px;margin-top:20px;font-size:13px;margin-bottom:10px;color:#666666;">
+	<b>Jobs:</b> If you are interested in looking for a job after your degree, here is the chance to find yourself a job... Here you can find government as well as private jobs in the field. Be it mechanical engineering jobs, civil engineering jobs, electrical engineering jobs, biotechnology jobs, B.Tech jobs, MCA Jobs etc. Get the top Jobs for Graduates, with an extensive list of all graduate jobs online. Freshersworld is one of the Top Fresher job sites in India, with over 1000 companies listing jobs online. In the field of commerce, we have chartered accountant jobs, company secretary jobs. Apart from CA jobs we have BBA jobs, government jobs for MBA, supply chain management jobs, jobs for B.Com graduates, diploma jobs etc. Supply chain management jobs and government jobs for MBA are also listed here. Specially, there are jobs for Graduates in Major cities Including Mumbai, Bangalore, Hyderabad, Delhi Chennai and more. Freshers applying for the best jobs can improve their chances by taking our placement tests. Freshersworld is the number one job site for Freshers in India. We have jobs in across all fields including management, BPO, Engineering, medical and research field as well. There are pharmacy jobs, veterinary jobs, MSc chemistry jobs, testing jobs and lab technician jobs to name a few. Search and apply for jobs for freshers and find the latest jobs online.<br><br>
+
+	<b>Online Job Portal for Freshers in India:</b>  Freshersworld is one of the best popular job sites in India, always help jobseeker mainly freshers to find latest jobs in accordance with the qualification in all possible fields like Govt, Private, Engineering, IT, Bank, Defence etc. As a leading job portal, once freshers register with us we provide free job alert and send mailers to candidates and helps to find best job opportunities in their respective fields of expertise. Freshersworld is the best website for freshers who just completed their education and looking for job, as a top online job portal we act as medium to connect freshers with recruiters and employers and help them to find their suitable jobs according to their profession and educational qualification.<br><br>
+	
+	<b>No.1 Job sites in India:</b> Freshersworld is one of the best job portals for freshers, offers opportunities to trained and experienced professionals, useful if you are a fresher who is searching for a job. Helps Jobseekers to connect with the right people and let Freshers to get a job on demand lines in the industry as per your choice. Freshersworld is the most popular sites for freshers and user reviews are outstanding when compared to other job sites in India. Now Freshersworld become largest online job portal for freshers, has the biggest network of clients and companies in all possible fields. We first came in the year 2006 and has been accredited as being the leading Freshers job site in India by reviews and ratings.
+</div>
+
+<div class="col-lg-12 padding-right-none padding-left-none">
+<div class="footerWrapper">
+	<div class="align-center">
+		<div class="col-lg-12 main">
+			<div class="row splitLeft" style="margin:auto;">
+				<div class="col-lg-2 text-center"></div>
+				<div class="c0l-lg-12 padding-none">
+					<div class="col-lg-4 padding-none fw-text-block">
+						<div class="fw-text-head">
+							 Freshersworld.com :
+							<span class="fw-sub-text">The No.1 Jobsite for Freshers Hiring in India</span>
+						</div>
+						<div class="col-lg-12 padding-none">
+							<div class="fw-sub-text-para">
+								Freshersworld.com is the No.1 Jobsite for Freshers in India with over 1.5+ Crore resumes and 60K+ recruiters hiring through us. Apply to Top MNC Jobs / Government jobs by registering now! What's more? Get daily job alert, placement paper and GK updates every day on your email. Freshersworld.com is the only website for applying to Govt Jobs and top MNC Jobs all over India. Register Now to benefit from our unlimited fresher focused services!
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-lg-5 candi padding-none">
+					<div class="col-lg-12 footer-links-block">
+						<div class="col-lg-4 employers-zone-block">
+							<div class="employer-head">Candidates Zone</div>
+								<ul class="employers-link-listing">
+									<li class="post-job-link">
+										<a class="footersub" href="#" title="CEAT">CEAT</a>
+									</li>
+									
+									<li class="end-to-end-link">
+										<a href="#" class="footersub" title="Premium Membership">Premium Membership</a>
+									</li>
+									
+									<li class="campus-link">
+										<a href="#" class="footersub" title="P3">P3</a>
+									</li>
+									
+									<li class="assesment-link">
+										<a href="#" class="footersub" title="Power Resume">Power Resume</a>
+									</li>
+									
+									<li class="assesment-link">
+										<a href="#" class="footersub" title="Placement Preparation">Placement Preparation</a>
+									</li>
+								</ul>
+							</div>		
+							
+							<div class="col-lg-4 employers-zone-block"> 
+								<div class="employer-head">Employer Zone</div>
+									<ul class="employers-link-listing">
+										<li class="post-job-link">
+											<a href="#" class="footersub" title="Post Job for Free">Post Job for Free</a>
+										</li>
+										
+										<li class="end-to-end-link">
+											<a href="#" class="footersub" title="End-to-End Recruitment">End-to-End Recruitment</a>
+										</li>
+										
+										<li class="campus-link">
+											<a href="#" class="footersub" title="Campus Recruitment">Campus Recruitment</a>
+										</li>
+										
+										<li class="assesment-link">
+											<a href="#" class="footersub" title="Online Assessment">Online Assessment</a>
+										</li>
+										
+										<li class="resume-link">
+											<a href="#" class="footersub" title="Resume Search">Resume Search</a>
+										</li>
+									</ul>
+								</div>
+								
+								<div class="col-lg-4 employers-zone-block">
+									<div class="employer-head">Institutes Zone</div>
+									<ul class="employers-link-listing">
+										<li class="post-job-link">
+											<a href="#" class="footersub" title="Post your Institute">Post your Institute</a>
+										</li>
+										
+										<li class="campus-link">
+											<a href="#" class="footersub" title="Email/SMS Campaign">Email/SMS Campaign</a>
+										</li>
+										
+										<li class="assesment-link">
+											<a href="#" class="footersub" title="Banner Ads Campaign">Banner Ads Campaign</a>
+										</li>
+										
+										<li class="resume-link">
+											<a href="#" class="footersub" title="Placement Assistant">Placement Assistant</a>
+										</li>
+									</ul>
+								</div>
+						</div>
+				</div>
+					
+					<div class="col-lg-4 padding-none connect-with-us">
+						<div class="col-lg-12 padding-none">
+							<div class="connect-with-us-head">Connect with us on fingertips</div>
+							<div class="footer-google-play">
+								<div class="app">
+									<a href="#"><img src="googleplay.png" style="width:100px;margin:auto;"></a>
+								</div>
+							</div>
+							
+							<div class="connect-with-us-head margin-top-15">Follow us</div>
+								<div class="inline-block margin-top-13">
+									<a href="#"  class="fa fa-facebook fa-icons" title="Get in Touch with Freshersworld in Facebook"></a>
+								</div>
+								
+								<div class="inline-block margin-left-9 margin-top-13">
+									<a href="#" class="fa fa-youtube fa-icons" title="Get in Touch with Freshersworld in Youtube"></a>
+								</div>
+								
+								<div class="inline-block margin-left-9 margin-top-13">
+									<a href="#" class="fa fa-linkedin fa-icons" title="Get in Touch with Freshersworld in Linkedin"></a>
+								</div>
+								
+								<div class="inline-block margin-left-9 margin-top-13">
+									<a href="#" class="fa fa-google fa-icons" title="Get in Touch with Freshersworld in Google"></a>
+								</div>
+								
+								<div class="inline-block margin-left-9 margin-top-13">
+									<a href="#" class="fa fa-twitter fa-icons" title="Get in Touch with Freshersworld in Twitter "></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+												
+		<div class="col-lg-12 text-center content-footer-bottom-links">
+			<div class="horiFooterSplitermobile">
+				<div class="col-lg-7 aboutus-left text-center">
+					<div class="mobile_footer mobile_footer_links">
+						<ul class="disk">
+							<li><a href="#" class="footersub" style="padding-left:0px;">About Us</a></li>
+							<li class="footerLinks" style="margin-left:10px;">|</li>
+							<li><a href="#" class="footersub" style="margin-left:10px;">Blog</a></li>
+							<li class="footerLinks" style="margin-left:10px;">|</li>
+							<li><a href="#" class="footersub" style="margin-left:10px;">FAQs</a></li>
+							<li class="footerLinks" style="margin-left:10px;">|</li>
+							<li><a href="#" class="footersub" style="margin-left:10px;">Advertise With Us</a></li>
+							<li class="footerLinks" style="margin-left:10px;">|</li>
+							<li><a href="#" class="footersub" style="margin-left:10px;">Recruitment Solutions</a></li>
+							<li class="footerLinks" style="margin-left:10px;">|</li>
+							<li><a href="#" class="footersub" style="margin-left:10px;">Contact Us</a></li>
+						</ul>
+					</div>
+				</div>
+				
+				<div class="col-lg-4" style="float:right;">
+					<div class="mobile_footer" style="float:right;">
+						<ul style="margin-bottom:3px;">
+							<li style="list-style-type:none;"><img src="teamlease.png"></li>
+						</ul>
+					</div>
+				</div>
+			</div>		
+		</div>		
+		
+		
+		
+		<div class="menu-footer display-flex">
+			<div class="container align-center footer-menu-container">
+				<div class="col-lg-12 padding_foot">
+					<h5 style="margin-bottom:0px; padding-left:7px;" class="header-5">
+						<b style="font-weight:700;"><a href="#" class="jobs_foot">Jobs</a></b>
+					</h5>
+					
+					<div class="col-lg-6 pad_left">
+						<span class="col-lg-11 footer-sub-menu jobs_by_category_head">
+							<a href="#" class="cat_color">Jobs By Category</a>
+						</span><br>
+						
+						<div class="col-lg-3 1_jobs jobs_by_category_list1">
+							<ul class="list-grp">
+								<li><a href="#" class="list" title="IT / Software Jobs">IT / Software Jobs</a></li>
+								<li><a href="#" class="list" title="Core Technical Jobs">Core Technical Jobs</a></li>
+								<li><a href="#" class="list"title="Government Jobs">Government Jobs</a></li>
+								<li><a href="#" class="list" title="Defence Jobs">Defence Jobs</a></li>
+								<li><a href="#" class="list" title="Research Jobs">Research Jobs</a></li>
+								<li><a href="#" class="list" title="BPO Jobs">BPO Jobs</a></li>
+								<li><a href="#" class="list" title="Bank Jobs">Bank Jobs</a></li>
+							</ul>
+						</div>
+						
+						<div class="col-lg-3 1_jobs jobs_by_category_list2">
+							<ul class="list-grp">
+								<li><a href="#" class="list" title="Tech Support Jobs">Tech Support Jobs</a></li>
+								<li><a href="#" class="list" title="Health Care Jobs">Health Care Jobs</a></li>
+								<li><a href="#" class="list" title="Hospitality Jobs">Hospitality Jobs</a></li>
+								<li><a href="#" class="list" title="Part Time Jobs">Part Time Jobs</a></li>
+								<li><a href="#" class="list" title="Retail Jobs">Retail Jobs</a></li>
+								<li><a href="#" class="list" title="Journalism Jobs">Journalism Jobs</a></li>
+								<li><a href="#" class="list" title="Quality Control Jobs">Quality Control Jobs</a></li>
+							</ul>
+						</div>
+						
+						<div class="col-lg-3 1_jobs jobs_by_category_list3">
+							<ul class="list-grp">
+								<li><a href="#" class="list" title="Teaching Jobs">Teaching Jobs</a></li>
+								<li><a href="#" class="list" title="1 to 3 Yr Exp">1 to 3 Yr Exp</a></li>
+								<li><a href="#" class="list" title="Dream Jobs > 5 lpa">Dream Jobs > 5 lpa</a></li>
+								<li><a href="#" class="list" title="Walk-ins Jobs">Walk-ins Jobs</a></li>
+								<li><a href="#" class="list" title="Manpower Consultants">Manpower Consultants</a></li>
+								<li><a href="#" class="list" title="Sports Jobs">Sports Jobs</a></li>
+								<li><a href="#" class="list" title="Finance Jobs">Finance Jobs</a></li>
+							</ul>
+						</div>
+						
+						<div class="col-lg-3 1_jobs jobs_by_category_list4">
+							<ul class="list-grp">
+								<li><a href="#" class="list" title="Pharma Jobs">Pharma Jobs</a></li>
+								<li><a href="#" class="list"title="StartUp Jobs">StartUp Jobs</a></li>
+								<li><a href="#" class="list" title="Internship Jobs">Internship Jobs</a></li>
+								<li><a href="#" class="list" title="MBA Jobs">MBA Jobs</a></li>
+								<li><a href="#" class="list" title="Scholarships Jobs">Scholarships Jobs</a></li>
+								<li><a href="#" class="list" title="BSc / BCA / BBM">BSc / BCA / BBM</a></li>
+								<li><a href="#" class="list" title="Other Category...">Other Category...</a></li>
+							</ul>
+						</div>
+						
+						<div class="col-lg-4 margin-top-20 jobs_by_skills_list">
+							<span class="col-lg-11 footer-sub-menu mar_left">
+								<a href="#" class="cat_color">Jobs by Skills</a>
+							</span>
+							<br>
+							<ul class="list-grp">
+								<li><a href="#" class="list" title="Big Data Analytics Jobs">Big Data Analytics Jobs</a></li>
+								<li><a href="#" class="list" title="CCNA Jobs">CCNA Jobs</a></li>
+								<li><a href="#" class="list" title="Digital Marketing Jobs">Digital Marketing Jobs</a></li>
+								<li><a href="#" class="list" title="Embedded System Jobs">Embedded System Jobs</a></li>
+								<li><a href="#" class="list" title="Finance Jobs">Finance Jobs</a></li>
+								<li><a href="#" class="list" title="HR Jobs">HR Jobs</a></li>
+								<li><a href="#" class="list" title="Mainframe Jobs">Mainframe Jobs</a></li>
+								<li><a href="#" class="list" title="Marketing Jobs">Marketing Jobs</a></li>
+								<li><a href="#" class="list" title="Networking Engineer Jobs">Networking Engineer Jobs</a></li>
+								<li><a href="#" class="list" title="Oracle Jobs">Oracle Jobs</a></li>
+								<li><a href="#" class="list" title="SAP Jobs">SAP Jobs</a></li>
+								<li><a href="#" class="list" title="Software Testing Jobs">Software Testing Jobs</a></li>
+								<li><a href="#" class="list" title="Tech Support Jobs">Tech Support Jobs</a></li>
+							</ul>
+						</div>
+						
+						<div class="col-lg-4 margin-top-20 jobs_by_branch_list">
+							<span class="col-lg-11 footer-sub-menu mar_left">
+								<a href="#" class="cat_color">Jobs by Branches</a>
+							</span>
+							<br>
+							<ul class="list-grp">
+								<li><a href="#" class="list" title="Aeronautical Engineering Jobs">Aeronautical Engineering Jobs</a></li>
+								<li><a href="#" class="list" title="Architecture Jobs">Architecture Jobs</a></li>
+								<li><a href="#" class="list" title="Automobile Engineering Jobs">Automobile Engineering Jobs</a></li>
+								<li><a href="#" class="list" title="Computer Science Engineering Jobs">Computer Science Engineering Jobs</a></li>
+								<li><a href="#" class="list" title="Chemical Engineering Jobs">Chemical Engineering Jobs</a></li>
+								<li><a href="#" class="list" title="Civil Engineering Jobs">Civil Engineering Jobs</a></li>
+								<li><a href="#" class="list" title="ECE Jobs">ECE Jobs</a></li>
+								<li><a href="#" class="list" title="Electrical Engineering Jobs">Electrical Engineering Jobs</a></li>
+								<li><a href="#" class="list" title="Instrumentation Engineering Jobs">Instrumentation Engineering Jobs</a></li>
+								<li><a href="#" class="list" title="Mechanical Jobs">Mechanical Jobs</a></li>
+								<li><a href="#" class="list" title="Nursing Jobs">Nursing Jobs</a></li>
+								<li><a href="#" class="list" title="MSC Botany Jobs">MSC Botany Jobs</a></li>
+								<li><a href="#" class="list" title="MSC Physics Jobs">MSC Physics Jobs</a></li>
+							</ul>
+						</div>
+						
+						<div class="col-lg-4 margin-top-20 jobs_by_role_list">
+							<span class="col-lg-11 footer-sub-menu mar_left jobs_by_role_head">
+								<a href="#" class="cat_color">Jobs by Roles</a>
+							</span>
+							<br>
+							<ul class="list-grp">
+								<li><a href="#" class="list" title="Accountant Jobs">Accountant Jobs</a></li>
+								<li><a href="#" class="list" title="Architect Jobs">Architect Jobs</a></li>
+								<li><a href="#" class="list" title="Telecaller Jobs">Telecaller Jobs</a></li>
+								<li><a href="#" class="list" title="Content Writer Jobs">Content Writer Jobs</a></li>
+								<li><a href="#" class="list" title="Data Entry Jobs">Data Entry Jobs</a></li>
+								<li><a href="#" class="list" title="Fashion Designer Jobs">Fashion Designer Jobs</a></li>
+								<li><a href="#" class="list" title="HR Admin Jobs">HR Admin Jobs</a></li>
+								<li><a href="#" class="list" title="Management Trainee Jobs">Management Trainee Jobs</a></li>
+								<li><a href="#" class="list" title="Medical Representative Jobs">Medical Representative Jobs</a></li>
+								<li><a href="#" class="list" title="Sales/Marketing Executive Jobs">Sales/Marketing Executive Jobs</a></li>
+								<li><a href="#" class="list" title="NON_IT Jobs">NON_IT Jobs</a></li>
+								<li><a href="#" class="list" title="Receptionist Jobs">Receptionist Jobs</a></li>
+								<li><a href="#" class="list" title="SEO Analyst Jobs">SEO Analyst Jobs</a></li>
+							</ul>
+						</div>
+					</div><!--closing of pad_left-->
+					
+					<div class="col-lg-2 jobs_by_courses_list1">
+						<span class="col-lg-12 footer-sub-menu mar_left">
+							<a href="#" class="cat_color">Jobs By Courses</a>
+						</span>
+						<br>
+							<ul class="list-grp">
+								<li><a href="#" class="list" title="BE Jobs / B.Tech Jobs">BE Jobs / B.Tech Jobs</a></li>
+								<li><a href="#" class="list" title="MCA Jobs">MCA Jobs</a></li>
+								<li><a href="#" class="list" title="MBA Jobs / PGDM Jobs">MBA Jobs / PGDM Jobs</a></li>
+								<li><a href="#" class="list" title="ME Jobs / M.Tech Jobs">ME Jobs / M.Tech Jobs</a></li>
+								<li><a href="#" class="list" title="M.Sc Jobs">M.Sc Jobs</a></li>
+								<li><a href="#" class="list" title="B.Com Jobs">B.Com Jobs</a></li>
+								<li><a href="#" class="list" title="BBA / BBM Jobs">BBA / BBM Jobs</a></li>
+								<li><a href="#" class="list" title="BCA Jobs">BCA Jobs</a></li>
+								<li><a href="#" class="list" title="BSc Jobs">BSc Jobs</a></li>
+								<li><a href="#" class="list" title="Diploma Jobs">Diploma Jobs</a></li>
+							</ul>
+					</div>
+					
+					<div class="col-lg-2 jobs_by_cities_list1">
+						<span class="col-lg-12 footer-sub-menu mar_left">
+							<a href="#" class="cat_color">Jobs By Cities</a>
+						</span>
+						<br>
+							<ul class="list-grp">
+								<li><a href="#" class="list" title="Jobs in Ahmedabad">Jobs in Ahmedabad</a></li>
+								<li><a href="#" class="list" title="Jobs in Bangalore">Jobs in Bangalore</a></li>
+								<li><a href="#" class="list" title="Jobs in Chennai">Jobs in Chennai</a></li>
+								<li><a href="#" class="list" title="Jobs in Delhi / NCR">Jobs in Delhi / NCR</a></li>
+								<li><a href="#" class="list" title="Jobs in Hyderabad">Jobs in Hyderabad</a></li>
+								<li><a href="#" class="list" title="Jobs in Kolkata">Jobs in Kolkata</a></li>
+								<li><a href="#" class="list" title="Jobs in Mumbai">Jobs in Mumbai</a></li>
+								<li><a href="#" class="list" title="Jobs in Pune">Jobs in Pune</a></li>
+								<li><a href="#" class="list" title="Jobs in Gurgaon">Jobs in Gurgaon</a></li>
+								<li><a href="#" class="list" title="Jobs in Noida">Jobs in Noida</a></li>
+							</ul>
+					</div>
+						
+					<div class="col-lg-2 jobs_by_company_lists">
+						<span class="col-lg-11 footer-sub-menu">
+							<a href="#" class="cat_color">Jobs By Company</a>
+						</span>
+						<br>
+						<div class="col-lg-6 1_jobs jobs_by_company_list1">
+							<ul class="list-grp">
+								<li><a href="#" class="list" title="IBPS Recruitment">IBPS Recruitment</a></li>
+								<li><a href="#" class="list" title="ONGC Recruitment">ONGC Recruitment</a></li>
+								<li><a href="#" class="list" title="DRDO Recruitment">DRDO Recruitment</a></li>
+								<li><a href="#" class="list" title="HAL Recruitment">HAL Recruitment</a></li>
+								<li><a href="#" class="list" title="ISRO Recruitment">ISRO Recruitment</a></li>
+								<li><a href="#" class="list" title="Railway Recruitment">Railway Recruitment</a></li>
+								<li><a href="#" class="list" title="Police Recruitment">Police Recruitment</a></li>
+								<li><a href="#" class="list" title="SBI Recruitment">SBI Recruitment</a></li>
+								<li><a href="#" class="list" title="Indian Air Force Recruitment">Indian Air Force Recruitment</a></li>
+								<li><a href="#" class="list" title="Indian Army Recruitment">Indian Army Recruitment</a></li>
+							</ul>	
+						</div>
+						
+						<div class="col-lg-6 1_jobs jobs_by_company_list2">
+							<ul class="list-grp">
+								<li><a href="#" class="list" title="Indian Navy Recruitment">Indian Navy Recruitment</a></li>
+								<li><a href="#" class="list" title="UPSC Recruitment">UPSC Recruitment</a></li>
+								<li><a href="#" class="list" title="FCI Recruitment">FCI Recruitment</a></li>
+								<li><a href="#" class="list" title="BEL Recruitment">BEL Recruitment</a></li>
+								<li><a href="#" class="list" title="Other Companies...">Other Companies...</a></li>
+							</ul>	
+						</div>
+					</div>
+						
+			
+		</div>
+</div><br>	
+
+<!--<div class="col-lg-12 padding-none display-flex" style="background-color:#343C47;height:44px;">	
+	<div class="col-lg-12 text-center footersubLinks align-center" style="padding-top:15px;">
+		<ul class="list-inline lesserNote">
+			<li><a href="#" class="last-footer-links">Terms of Use</a></li>
+			<li class="footerLinks footerLinks-divider">|</li>
+			<li><a href="#" class="last-footer-links">Privacy Policy</a></li>
+			<li class="footerLinks footerLinks-divider">|</li>
+			<li><a href="#" class="last-footer-links">Copyright</a></li>
+			<li class="footerLinks footerLinks-divider">|</li>
+			<li><a href="#" class="last-footer-links">Site Map</a></li>
+			<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<i class="fa fa-copyright"></i>2006 -2018 Freshersworld.com</li>
+			<li class="serv_addr">10.0.1.108</li>
+		</ul>
+	</div>
+</div>-->
+
+
+
+
+
+
+
+<!---modal login script--->		
+<script>
+$(document).ready(function(){
+    $("#btn1").click(function(){
+        $("#myModal").modal();
+    });
+});
+</script>
+
+<!---goto top button--->
+<script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+</script>
+<!--tooltip text--->
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
+
+</body>
+</html>
